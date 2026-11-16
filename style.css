@@ -1,0 +1,405 @@
+
+/* =================================
+   HAKIM SMART LOPEZ — PORTFÓLIO
+   Identidade visual: HSL Technologies
+================================= */
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #202b3c;
+    line-height: 1.7;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* CORES */
+
+:root {
+    --blue: #2864a5;
+    --dark-blue: #183b63;
+    --light-blue: #eaf2fa;
+    --gray: #687586;
+    --light-gray: #f5f7fa;
+    --white: #ffffff;
+    --dark: #202b3c;
+}
+
+/* HEADER */
+
+.header {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.96);
+    border-bottom: 1px solid #edf0f4;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: 800;
+    letter-spacing: -1.5px;
+    color: var(--dark-blue);
+}
+
+.logo span {
+    color: var(--blue);
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--gray);
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.25s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--blue);
+}
+
+/* HERO */
+
+.hero {
+    max-width: 1200px;
+    min-height: 650px;
+    margin: auto;
+    padding: 90px 6%;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: center;
+    gap: 70px;
+}
+
+.eyebrow {
+    color: var(--blue);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    margin: 22px 0;
+    font-size: clamp(45px, 6vw, 76px);
+    line-height: 1.08;
+    letter-spacing: -4px;
+    color: var(--dark);
+}
+
+.hero h1 span {
+    color: var(--blue);
+}
+
+.hero-description {
+    max-width: 520px;
+    color: var(--gray);
+    font-size: 17px;
+    margin-bottom: 32px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.button {
+    display: inline-block;
+    padding: 13px 22px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 700;
+    transition: 0.25s ease;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+}
+
+.primary {
+    background: var(--blue);
+    color: var(--white);
+}
+
+.primary:hover {
+    background: var(--dark-blue);
+}
+
+.secondary {
+    border: 1px solid #d9e1eb;
+    color: var(--dark-blue);
+}
+
+.secondary:hover {
+    background: var(--light-blue);
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 390px;
+    justify-self: end;
+    aspect-ratio: 4 / 5;
+    background: var(--light-blue);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* SEÇÕES */
+
+.section {
+    padding: 100px 8%;
+}
+
+.section h2 {
+    max-width: 750px;
+    margin: 18px 0;
+    font-size: clamp(30px, 4vw, 44px);
+    line-height: 1.2;
+    letter-spacing: -1.5px;
+    color: var(--dark);
+}
+
+.intro {
+    background: var(--light-gray);
+}
+
+.intro p {
+    max-width: 750px;
+    margin: 22px 0;
+    color: var(--gray);
+    font-size: 16px;
+}
+
+.text-link {
+    display: inline-block;
+    color: var(--blue);
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 12px;
+}
+
+.text-link:hover {
+    color: var(--dark-blue);
+    text-decoration: underline;
+}
+
+/* EMPRESA E PROJETO */
+
+.company {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section-heading {
+    margin-bottom: 40px;
+}
+
+.section-heading p {
+    max-width: 650px;
+    color: var(--gray);
+}
+
+.project-card {
+    min-height: 280px;
+    padding: 45px;
+    border-radius: 12px;
+    background: var(--light-blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.project-info {
+    max-width: 600px;
+}
+
+.project-label {
+    font-size: 10px;
+    font-weight: 800;
+    color: var(--blue);
+    letter-spacing: 1.5px;
+}
+
+.project-card h3 {
+    margin: 15px 0;
+    font-size: 48px;
+    color: var(--dark-blue);
+    letter-spacing: -2px;
+}
+
+.project-card p {
+    color: var(--gray);
+}
+
+.project-symbol {
+    font-size: 100px;
+    font-weight: 800;
+    color: rgba(40, 100, 165, 0.15);
+    letter-spacing: -10px;
+}
+
+/* VALORES */
+
+.values {
+    background: var(--light-gray);
+}
+
+.values-list {
+    max-width: 850px;
+    margin-top: 35px;
+    list-style: none;
+}
+
+.values-list li {
+    padding: 22px 0;
+    border-bottom: 1px solid #dfe5ec;
+    display: flex;
+    flex-direction: column;
+}
+
+.values-list strong {
+    color: var(--dark-blue);
+    font-size: 18px;
+}
+
+.values-list span {
+    color: var(--gray);
+    font-size: 14px;
+}
+
+/* FOOTER */
+
+.footer {
+    padding: 45px 8%;
+    text-align: center;
+    border-top: 1px solid #edf0f4;
+}
+
+.footer p {
+    color: var(--gray);
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.copyright {
+    font-size: 11px !important;
+    color: #929ba7 !important;
+}
+
+/* ACESSIBILIDADE */
+
+a:focus-visible {
+    outline: 3px solid var(--blue);
+    outline-offset: 4px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 800px) {
+
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 45px;
+        padding-top: 65px;
+        text-align: center;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-image {
+        justify-self: center;
+        max-width: 320px;
+    }
+
+    .section {
+        padding: 75px 7%;
+    }
+
+    .project-card {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 520px) {
+
+    .navbar {
+        padding: 18px 5%;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 25px;
+    }
+
+    .hero h1 {
+        letter-spacing: -2px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+    .project-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .project-symbol {
+        font-size: 65px;
+    }
+
+    .values-list li {
+        gap: 5px;
+    }
+}
