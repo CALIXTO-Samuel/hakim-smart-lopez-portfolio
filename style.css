@@ -711,3 +711,8 @@ p {
         font-size: 39px;
     }
 }
+
+/* Seletor de ID */
+#inicio {
+    scroll-margin-top: 24px;
+}
