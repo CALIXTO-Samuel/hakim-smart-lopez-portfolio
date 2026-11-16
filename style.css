@@ -716,3 +716,15 @@ p {
 #inicio {
     scroll-margin-top: 24px;
 }
+
+/* Efeito ao passar o mouse sobre os links */
+.logo,
+.footer-content > a:last-child {
+    transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.logo:hover,
+.footer-content > a:last-child:hover {
+    color: var(--blue);
+    opacity: 0.75;
+}
