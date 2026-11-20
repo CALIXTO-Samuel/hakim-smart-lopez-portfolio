@@ -728,3 +728,44 @@ p {
     color: var(--blue);
     opacity: 0.75;
 }
+
+
+/* =====================================
+   VÍDEO DE APRESENTAÇÃO DO ELION
+===================================== */
+
+.elion-video {
+    margin-top: 26px;
+}
+
+.elion-video summary {
+    list-style: none;
+    width: fit-content;
+}
+
+.elion-video summary::-webkit-details-marker {
+    display: none;
+}
+
+.elion-video-frame {
+    margin-top: 22px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: #101827;
+    box-shadow: var(--shadow);
+}
+
+.elion-video-frame video {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    background: #080e19;
+}
+
+@media (max-width: 560px) {
+    .elion-video summary {
+        width: 100%;
+    }
+}
